@@ -3,19 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-cream: #fff7ef;
+  --skin: #e1d3c8;
+  --orange: #ea513f;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
 }
+
+.font-cheaps {
+  font-family: var(--font-cheaps);
+}
+.font-verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Responsive font sizes */
+.font-110 {
+  font-size: 110px;
+}
+.font-55 {
+  font-size: 55px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.header-font {
+  font-family: var(--font-cheaps);
+  font-size: 230px;
+}
+/* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
