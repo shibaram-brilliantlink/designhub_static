@@ -10,6 +10,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.125rem;
+  min-width: 320px;
 }
 
 .font-cheaps {
@@ -25,11 +26,24 @@ body {
 .font-55 {
   font-size: 55px;
 }
+.font-46 {
+  font-size: clamp(1.875rem, 1.7011rem + 0.8696vw, 2.875rem);
+}
 .font-30 {
-  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 0.9;
 }
 .header-font {
   font-family: var(--font-cheaps);
   font-size: 230px;
 }
 /* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
+
+.c_pad {
+  padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .c_pad {
+    padding-inline: 3.4375rem;
+  }
+}
