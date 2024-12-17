@@ -28,7 +28,6 @@ body {
 }
 /* Responsive font sizes */
 /* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
-
 .font-110 {
   font-size: 110px;
 }
@@ -54,7 +53,7 @@ body {
     letter-spacing: -2px;
   }
 }
-
+/* ----------------------HELPER CLASSES------------------------- */
 .c_pad {
   padding-inline: 1rem;
 }
@@ -70,4 +69,43 @@ body {
   display: inline-flex;
   align-items: center;
   text-underline-offset: 0.18em;
+}
+.btn-footer {
+  font-size: clamp(1.875rem, 1.1679rem + 3.5354vw, 6.25rem);
+  font-family: var(--font-cheaps);
+  line-height: 1;
+  padding: 0.2em 0.75em 0px;
+  border: 1.5px solid #000;
+  border-radius: 2em;
+}
+.btn-footer:hover {
+  transform: scale(1.05);
+}
+.circular-red {
+  display: inline-block;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  color: var(--orange);
+  font-weight: 1000;
+  position: relative;
+}
+.circular-red span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circular-black {
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 50%;
+  color: var(--orange);
+  font-weight: 1000;
+  position: relative;
+}
+.circular-black span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

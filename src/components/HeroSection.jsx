@@ -1,9 +1,7 @@
-import React from "react";
-
 export default function HeroSection() {
   return (
     <section className="hero-section font-cheaps c_pad">
-      <h1 className="border border-black lg:w-[65%] hero-font mt-[60px] md:mt-[80px]">
+      <h1 className="lg:w-[65%] hero-font mt-[60px] md:mt-[80px]">
         FUTURE <br />{" "}
         <span className="md:pl-[100px] text-nowrap">DESIGN WORK</span>
       </h1>
@@ -16,7 +14,7 @@ export default function HeroSection() {
           />
         </div>
         <div className="flex flex-col gap-4 xl:w-[65%] xl:flex-row-reverse xl:items-end xl:justify-between">
-          <div className="center border border-black max-w-[400px]">
+          <div className="center max-w-[400px]">
             <h3 className="font-55 mb-3">
               Suraksha kateeka <br />
               project
@@ -27,7 +25,7 @@ export default function HeroSection() {
             </p>
             <button className="btn-red text-[30px]">LEARN MORE</button>
           </div>
-          <div className="bill border border-black flex flex-row-reverse sm:flex-row gap-10 pt-4 ">
+          <div className="bill flex flex-row-reverse sm:flex-row gap-10 pt-4 ">
             <div className="left flex flex-col justify-between">
               <div>
                 <h4 className="text-[24px] leading-6 ">

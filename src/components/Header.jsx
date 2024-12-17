@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="c_pad py-[24px] md:py-[30px] w-full font-cheaps border border-black flex justify-between items-center">
+    <header className="c_pad py-[24px] md:py-[30px] w-full font-cheaps flex justify-between items-center">
       <div className="menu p-[2px]">
         <span className="w-8 h-[3px] block mb-[12px] bg-black rounded-lg"></span>
         <span className="w-10 h-[3px] block mb-[12px] bg-black  rounded-lg"></span>
