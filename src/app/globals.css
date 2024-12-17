@@ -12,7 +12,7 @@ body {
   font-size: 1.125rem;
   min-width: 320px;
 }
-
+/* ----------------------FONTS------------------------- */
 .font-cheaps {
   font-family: var(--font-cheaps);
 }
@@ -20,6 +20,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Responsive font sizes */
+/* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
+
 .font-110 {
   font-size: 110px;
 }
@@ -37,7 +39,6 @@ body {
   font-family: var(--font-cheaps);
   font-size: 230px;
 }
-/* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
 
 .c_pad {
   padding-inline: 1rem;
