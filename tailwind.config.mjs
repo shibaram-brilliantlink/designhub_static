@@ -12,6 +12,9 @@ export default {
         skin: "var(--skin)",
         orange: "var(--orange)",
       },
+      screens: {
+        "3xl": "2000px",
+      },
     },
   },
   plugins: [],
