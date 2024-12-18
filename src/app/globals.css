@@ -30,7 +30,8 @@ body {
 /* Responsive font sizes */
 /* Range 90, 70, 60, 55, 46, 24, 20, 18, 14 */
 .font-110 {
-  font-size: 40px;
+  font-size: clamp(2.5rem, 0.8594rem + 4.375vw, 6.875rem);
+  line-height: 1;
 }
 .font-55 {
   font-size: clamp(2.5rem, 2.3485rem + 0.7576vw, 3.4375rem);
@@ -81,17 +82,18 @@ body {
 }
 .circular-red {
   display: inline-block;
-  border: 2px solid var(--orange);
+  border: 1.5px solid var(--orange);
   border-radius: 50%;
   color: var(--orange);
   font-weight: 1000;
-  position: relative;
+  position: absolute;
 }
 .circular-red span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: clamp(1.25rem, 0.7137rem + 1.1173vw, 2.25rem);
 }
 .circular-black {
   display: inline-block;
@@ -155,4 +157,42 @@ body {
   position: absolute;
   left: -1px;
   top: -1px;
+}
+
+/* .about-img {
+  display: inline-block;
+  position: relative;
+}
+.about-img::before {
+  content: "";
+  display: inline;
+  background: var(--orange);
+  position: absolute;
+  height: auto;
+  width: 100%;
+  border-radius: 3px;
+  transform: rotate(8deg);
+  z-index: 9;
+}
+.about-img img {
+  position: relative;
+  z-index: 10;
+} */
+.about-img {
+  display: inline-block;
+  background: var(--orange);
+  width: 12%;
+  border-radius: 3px;
+  transform: rotate(8deg);
+}
+.about-img img {
+  display: inline-block;
+  width: 95%;
+  height: 95%;
+  transform: rotate(-8deg);
+}
+@media (min-width: 768px) {
+  .about-img {
+    width: 6%;
+  }
 }
