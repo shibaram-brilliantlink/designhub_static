@@ -22,6 +22,7 @@ body {
 /* ----------------------FONTS------------------------- */
 .font-cheaps {
   font-family: var(--font-cheaps);
+  word-spacing: -3px;
 }
 .font-verdana {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,16 +35,22 @@ body {
 .font-55 {
   font-size: clamp(2.5rem, 2.3485rem + 0.7576vw, 3.4375rem);
   line-height: 1;
+  word-spacing: -3px;
 }
 .font-46 {
   font-size: clamp(1.875rem, 1.7011rem + 0.8696vw, 2.875rem);
 }
 .font-30 {
-  font-size: 1.875rem;
-  line-height: 0.9;
+  font-size: clamp(1.25rem, 1.149rem + 0.5051vw, 1.875rem);
+  line-height: 1.6;
 }
 .hero-font {
   font-size: clamp(4.375rem, 1.7487rem + 10.1313vw, 16.625rem);
+  line-height: 1;
+  letter-spacing: 0.1px;
+}
+.footer-font {
+  font-size: 23vw;
   line-height: 1;
   letter-spacing: 0.1px;
 }
@@ -52,34 +59,25 @@ body {
     line-height: 0.8;
     letter-spacing: -2px;
   }
+  .footer-font {
+    line-height: 0.8;
+    letter-spacing: -2px;
+  }
 }
+
 /* ----------------------HELPER CLASSES------------------------- */
 .c_pad {
   padding-inline: 1rem;
 }
 @media (min-width: 768px) {
   .c_pad {
-    padding-inline: 3.4375rem;
+    padding-inline: 2rem;
   }
 }
-
-.btn-red {
-  color: var(--orange);
-  text-decoration: underline;
-  display: inline-flex;
-  align-items: center;
-  text-underline-offset: 0.18em;
-}
-.btn-footer {
-  font-size: clamp(1.875rem, 1.1679rem + 3.5354vw, 6.25rem);
-  font-family: var(--font-cheaps);
-  line-height: 1;
-  padding: 0.2em 0.75em 0px;
-  border: 1.5px solid #000;
-  border-radius: 2em;
-}
-.btn-footer:hover {
-  transform: scale(1.05);
+@media (min-width: 1024px) {
+  .c_pad {
+    padding-inline: 3.4375rem;
+  }
 }
 .circular-red {
   display: inline-block;
@@ -108,4 +106,50 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.btn-red {
+  color: var(--orange);
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  text-underline-offset: 0.18em;
+}
+/* ----------------------HERO------------------------- */
+
+/* ----------------------FOOTER------------------------- */
+.btn-footer {
+  font-size: clamp(1.875rem, 1.471rem + 2.0202vw, 4.375rem);
+  font-family: var(--font-cheaps);
+  line-height: 1;
+  padding: 0.2em 0.75em 0px;
+  border: 1.5px solid #000;
+  border-radius: 2em;
+}
+.btn-footer:hover {
+  transform: scale(1.05);
+}
+.footer-book-btn {
+  background: var(--orange);
+  color: var(--bg-cream) !important;
+  padding: 10px 10px 3px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-size: clamp(1.875rem, 0.2344rem + 4.375vw, 6.25rem);
+  position: relative;
+}
+.footer-book-btn:hover {
+  transform: scale(1.05);
+}
+
+.footer-book-btn::after {
+  content: "";
+  border-top: 4vw solid var(--bg-cream);
+  border-right: 4vw solid transparent;
+  display: inline-block;
+  position: absolute;
+  left: -1px;
+  top: -1px;
 }
