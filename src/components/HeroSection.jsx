@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="hero-section font-cheaps c_pad">
+    <section className="hero-section font-cheaps c_pad pb-[40px]">
       <h1 className="lg:w-[65%] hero-font mt-[60px] md:mt-[80px]">
         FUTURE <br />{" "}
         <span className="md:pl-[100px] text-nowrap">DESIGN WORK</span>

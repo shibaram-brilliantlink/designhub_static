@@ -18,9 +18,9 @@ export default function Footer() {
             ABOUT
           </a>
         </div>
-        <div className="circular-red p-7 text-3xl lg:text-3xl lg:p-10 ">
+        <a href="#" className="circular-red p-7 text-3xl lg:text-3xl lg:p-10 ">
           <span>&uarr;</span>
-        </div>
+        </a>
       </div>
       <div className="center flex flex-col md:flex-row justify-between mb-4">
         <div className="left mb-6 font-30 text-neutral-700">
@@ -28,22 +28,39 @@ export default function Footer() {
           <p>
             Jakob-Funke-Platz 2 <br />
             45127 Essen <br />
-            <a href="mailto:shibaram.daseng@gmail.com">
+            <a
+              href="mailto:shibaram.daseng@gmail.com"
+              className="hover:underline"
+            >
               contactus@designhub.com
             </a>
           </p>
           <p className="text-lg mt-8 md:mt-[80px] hidden md:block">
-            Terms or use | Privacy Policy
+            <span className="hover:underline">Terms or use</span>|
+            <span className="hover:underline">Privacy Policy</span>
           </p>
         </div>
-        <ul className="right font-cheaps mb-6 font-46 md:text-right">
-          <li>INSTAGRAM</li>
-          <li>FACEBOOK</li>
-          <li>LINKEDIN</li>
-          <li>DRIBBLE</li>
-          <li>BEHANCE</li>
+        <ul className="right font-cheaps mb-6 font-46 md:text-right cursor-pointer">
+          <li className="hover:text-orange transition-colors duration-200 ease-out">
+            INSTAGRAM
+          </li>
+          <li className="hover:text-orange transition-colors duration-200 ease-out">
+            FACEBOOK
+          </li>
+          <li className="hover:text-orange transition-colors duration-200 ease-out">
+            LINKEDIN
+          </li>
+          <li className="hover:text-orange transition-colors duration-200 ease-out">
+            DRIBBLE
+          </li>
+          <li className="hover:text-orange transition-colors duration-200 ease-out">
+            BEHANCE
+          </li>
         </ul>
-        <p className="text-lg md:hidden">Terms or use | Privacy Policy</p>
+        <p className="text-lg md:hidden text-neutral-700 ">
+          <span className="hover:underline cursor-pointer">Terms or use</span>|
+          <span className="hover:underline cursor-pointer">Privacy Policy</span>
+        </p>
       </div>
       <div className="bottom flex justify-center flex-wrap gap-x-4 lg:gap-x-6 sm:flex-nowrap">
         <div className="footer-font font-cheaps h-[18vw] md:translate-y-[14%] mb-4 md:mb-0">
