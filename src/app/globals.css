@@ -88,6 +88,7 @@ body {
   color: var(--orange);
   font-weight: 1000;
   position: absolute;
+  cursor: pointer;
 }
 .circular-red span {
   position: absolute;
@@ -98,10 +99,11 @@ body {
 }
 .circular-black {
   display: inline-block;
-  border: 2px solid #000;
+  border: 1.5px solid #000;
   border-radius: 50%;
   font-weight: 1000;
   position: relative;
+  cursor: pointer;
 }
 .circular-black span {
   position: absolute;
@@ -111,7 +113,7 @@ body {
 }
 .circular-red:hover,
 .circular-black:hover {
-  transform: scale(1.05);
+  transform: rotate(-45deg);
   transition: transform 0.2s eas-out;
 }
 .btn-red {

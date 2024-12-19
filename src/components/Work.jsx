@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Work() {
   return (
-    <section className="c_pad py-[50px] md:h-[100vh] flex flex-col md:flex-row">
-      <div className="left md:w-[40%] md:h-full flex flex-col justify-between">
+    <section className="c_pad py-[50px] md:h-[60vh] lg:h-[100vh] flex flex-col md:flex-row">
+      <div className="left md:w-[50%] lg:w-[30%] md:h-full flex flex-col justify-between">
         <h2 className="font-cheaps font-110 mb-8 text-center md:text-left">
           OUR WORK
         </h2>
@@ -23,7 +23,7 @@ export default function Work() {
           <button className="btn-red font-cheaps font-30">LEARN MORE</button>
         </div>
       </div>
-      <div className="work-img-container relative hidden w-full md:block md:flex-3">
+      <div className="work-img-container relative hidden w-full md:block md:flex-1 ">
         <div
           className="image-corner-cut top-[5%] left-[5%] w-[33%] opacity-65"
           style={{ "--cut-size": "20%" }}
