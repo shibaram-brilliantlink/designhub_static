@@ -23,7 +23,7 @@ export default function HeroSection() {
               The common practice of placing a teeka on children's forheads to
               ward off the evils-eye is practiced by indian household.
             </p>
-            <button className="btn-red text-[30px]">LEARN MORE</button>
+            <button className="btn-red font-30">LEARN MORE</button>
           </div>
           <div className="bill flex flex-row-reverse sm:flex-row gap-10 pt-4 ">
             <div className="left flex flex-col justify-between">
