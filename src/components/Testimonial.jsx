@@ -3,10 +3,10 @@ import React from "react";
 export default function Testimonial() {
   return (
     <section className="c_pad py-[40px] lg:py-[80px] bg-skin">
-      <h2 className="font-cheaps font-55 mb-[30px] md:mb-[60px]">
+      <h2 className="font-cheaps font-110 mb-[30px] md:mb-[60px]">
         HOW CLIENTS FEEL
       </h2>
-      <div className="flex justify-between">
+      <div className="flex justify-between ">
         <div className="left hidden md:flex flex-col">
           <div>
             <img src="./reviews-01.png" alt="person01" />
@@ -15,7 +15,7 @@ export default function Testimonial() {
             <span>&#8701;</span>
           </div>
         </div>
-        <div className="main p-10 bg-white rounded-md flex flex-col items-center gap-4">
+        <div className="review-card p-10 bg-white rounded-md flex flex-col items-center gap-4 md:w-[50%] max-w-[600px]">
           <img
             src="./reviews-02.png"
             alt="iamge"

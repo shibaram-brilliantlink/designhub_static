@@ -28,37 +28,32 @@ export default function Work() {
           className="image-corner-cut top-[5%] left-[5%] w-[33%] opacity-65"
           style={{ "--cut-size": "20%" }}
         >
-          <img src="./work-img1.png" alt="image" className="object-fit" />
+          <img
+            src="./work-img1.png"
+            alt="image"
+            className="object-fit w-full"
+          />
         </div>
-        {/* <div
-          className="image-corner-cut top-[12%] left-[30%] w-[35%] opacity-90"
-          style={{ "--cut-size": "16%" }}
-        >
-          <img src="./work-img2.png" alt="image" className="object-fit" />
-        </div> */}
-
         <div
-          className="image-corner-cut bottom-[5%] right-[5%] w-[40%] opacity-75"
+          className="image-corner-cut bottom-[5%] right-[5%] w-[32%] opacity-75"
           style={{ "--cut-size": "18%" }}
         >
-          <img src="./work-img3.png" alt="image" className="object-fit" />
+          <img
+            src="./work-img3.png"
+            alt="image"
+            className="object-fit w-full"
+          />
         </div>
         <div
           className="image-corner-cut top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[40%]"
           style={{ "--cut-size": "17%" }}
         >
-          <img src="./work-flower.png" alt="image" className="object-fit" />
+          <img
+            src="./work-flower.png"
+            alt="image"
+            className="object-fit w-full"
+          />
         </div>
-
-        {/* <div className="image-corner-cut">
-          <img src="./work-flower.png" alt="image" className="" />
-        </div>
-        <div className="image-corner-cut">
-          <img src="./work-img2.png" alt="image" className="" />
-        </div>
-        <div className="image-corner-cut">
-          <img src="./work-img3.png" alt="image" className="" />
-        </div> */}
       </div>
     </section>
   );
