@@ -227,3 +227,15 @@ body {
   top: 0;
   left: 0;
 }
+.testimonial-bg {
+  background-image: url("/grid.png");
+  background-color: var(--skin);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* @media (min-width: 1440px) {
+  .testimonial-bg {
+    background-size: contain;
+  }
+} */
